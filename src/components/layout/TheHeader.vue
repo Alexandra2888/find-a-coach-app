@@ -6,6 +6,9 @@
       <li>
         <router-link to="/coaches">All coaches</router-link>
       </li>
+      <li>
+        <router-link to="/requests">Requests</router-link>
+      </li>
     </ul>
   </nav>
 </header>
