@@ -1,9 +1,10 @@
 <template>
   <section>FILTER</section>
   <section>
+    <base-card>
     <div class="controls">
-      <buttton>Refresh</buttton>
-      <router-link to="/register">Register as Coach</router-link>
+      <base-button>Refresh</base-button>
+      <base-button to="/register">Register as Coach</base-button>
     </div>
     <ul v-if="hasCoaches">
       <coach-item
@@ -18,15 +19,18 @@
       </coach-item>
     </ul>
     <h3 v-else>No coaches found</h3>
+    </base-card>
   </section>
 </template>
 
 <script>
 import CoachItem from '../../components/coaches/CoachItem.vue';
+import BaseCard from '../../components/ui/BaseCard.vue';
 
 export default {
   components: {
     CoachItem,
+    BaseCard,
   },
   computed: {
     filteredCoaches() {
