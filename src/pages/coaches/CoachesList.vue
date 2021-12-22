@@ -3,8 +3,8 @@
   <section>
     <base-card>
     <div class="controls">
-      <base-button>Refresh</base-button>
-      <base-button to="/register">Register as Coach</base-button>
+      <base-button mode="outline">Refresh</base-button>
+      <base-button link to="/register">Register as Coach</base-button>
     </div>
     <ul v-if="hasCoaches">
       <coach-item
