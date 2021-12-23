@@ -1,5 +1,5 @@
 <template>
-  <button v-if="!link" class="mode">
+  <button v-if="!link" :class="mode">
     <slot></slot>
   </button>
   <router-link v-else :to="to" :class="mode">
@@ -23,7 +23,8 @@ export default {
     to: {
       type: String,
       required: false,
-      default: '/',
+      // eslint-disable-next-line quotes
+      default: "/",
     },
   },
 };

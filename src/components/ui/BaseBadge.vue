@@ -6,7 +6,8 @@
 
 <script>
 export default {
-  props: ['type', 'title'],
+  // eslint-disable-next-line quotes
+  props: ["type", "title"],
   computed: {
     text() {
       return this.title.toUpperCase();
