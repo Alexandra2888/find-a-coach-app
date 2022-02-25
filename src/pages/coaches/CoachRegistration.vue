@@ -1,7 +1,8 @@
 <template>
   <section>
-    <base-card>   <h2>Register as a Coach now!</h2>
-    <coach-form></coach-form>
+    <base-card>
+     <h2>Register as a Coach now!</h2>
+    <coach-form @save-data="saveData"></coach-form>
     </base-card>
   </section>
 </template>
@@ -10,6 +11,14 @@
 import CoachForm from './CoachForm.vue';
 
 export default {
-  components: { CoachForm },
+  components: {
+    CoachForm,
+  },
+
+  methods: {
+    saveData(data) {
+
+    },
+  },
 };
 </script>
