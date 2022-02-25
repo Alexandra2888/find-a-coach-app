@@ -13,21 +13,20 @@ export default {
     mode: {
       type: String,
       required: false,
-      default: null,
+      default: null
     },
     link: {
       type: Boolean,
       required: false,
-      default: false,
+      default: false
     },
     to: {
       type: String,
       required: false,
-      // eslint-disable-next-line quotes
-      default: "/",
-    },
-  },
-};
+      default: '/'
+    }
+  }
+}
 </script>
 
 <style scoped>

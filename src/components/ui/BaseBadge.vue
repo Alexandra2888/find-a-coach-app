@@ -6,14 +6,13 @@
 
 <script>
 export default {
-  // eslint-disable-next-line quotes
-  props: ["type", "title"],
+  props: ['type', 'title'],
   computed: {
     text() {
       return this.title.toUpperCase();
-    },
-  },
-};
+    }
+  }
+}
 </script>
 
 <style scoped>
