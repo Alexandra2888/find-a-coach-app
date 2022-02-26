@@ -2,11 +2,11 @@ export default {
   async contactCoach(context, payload) {
     const newRequest = {
       userEmail: payload.email,
-      message: payload.message
+      message: payload.message,
     };
     const response = await fetch(`https://vue-http-demo-85e9e.firebaseio.com/requests/${payload.coachId}.json`, {
       method: 'POST',
-      body: JSON.stringify(newRequest)
+      body: JSON.stringify(newRequest),
     });
 
     const responseData = await response.json();
@@ -33,16 +33,17 @@ export default {
 
     const requests = [];
 
+    // eslint-disable-next-line guard-for-in,no-restricted-syntax
     for (const key in responseData) {
       const request = {
         id: key,
-        coachId: coachId,
+        coachId,
         userEmail: responseData[key].userEmail,
-        message: responseData[key].message
+        message: responseData[key].message,
       };
       requests.push(request);
     }
 
     context.commit('setRequests', requests);
-  }
+  },
 };
