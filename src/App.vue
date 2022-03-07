@@ -12,9 +12,9 @@ import TheHeader from './components/layout/TheHeader.vue';
 
 export default {
   components: {
-    TheHeader
-  }
-}
+    TheHeader,
+  },
+};
 </script>
 
 <style>
