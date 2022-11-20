@@ -1,6 +1,7 @@
 # find-a-coach-app
 
-# You can see project live here: https://find-a-coach-app-vuejs.netlify.app/
+# You can see project live here:
+https://find-a-coach-app-vuejs.netlify.app/
 
 ## Project setup
 ```
