@@ -3,6 +3,8 @@
 # You can see project live here:
 https://find-a-coach-app-vuejs.netlify.app/
 
+<img src="https://github.com/Alexandra2888/find-a-coach-app/blob/main/coach.jpg" alt="coach"/>
+
 ## Project setup
 ```
 npm install
